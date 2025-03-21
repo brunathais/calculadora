@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #113685;
+  }
+  
+  .calculadora {
+    background-color: #1f1f1f; /* fundo calculadora */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Sombra calculadora */
+    width: 350px; /* Largura fixa da calculadora */
+  }
+  
+  #display {
+    width: 100%;
+    height: 50px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ffffff; /* Borda visor */
+    border-radius: 5px;
+    color: #fff; /* texto */
+    background-color: #444; /* fundo visor */
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Organiza os botões em 4 colunas */
+    gap: 7px; /* Espaçamento entre os botões */
+  }
+  
+  /* Estilo de cada botão */
+  button {
+    background-color: #5e5e5e; /* Cor de fundo dos botões */
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white; /* Cor do texto nos botões */
+  }
+  
+  button:hover {
+    background-color: #3300ff; /* Cor de fundo ao passar o mouse */
+  }
+  
+  button:active {
+    background-color: #00ff99; 
+  }
+  
+  .btn.red {
+    background-color: #e90000; 
+    color: white;
+  }
+  
+  .btn.orange {
+    background-color: #ff9d00; 
+    color: white;
+  }
+  
+  .btn.green {
+    background-color: #00b900; 
+    color: white;
+  }
+  
+  button:active {
+    background-color: #8400ff; 
+  }
